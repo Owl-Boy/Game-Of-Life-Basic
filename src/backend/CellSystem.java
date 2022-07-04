@@ -49,10 +49,11 @@ public final class CellSystem {
     public void nextGeneration() {
         for(int i = 0;i<grid.length;++i) {
             for(int j = 0;j<grid[0].length;++j) {
-             grid[i][j].stateUpdate(this.grid,
-                                    ApplicationLauncher.alive_LB,
-                                    ApplicationLauncher.alive_UB,
-                                    ApplicationLauncher.resurrect);
+             grid[i][j].stateUpdate(
+                 this.grid,
+                 ApplicationLauncher.alive_LB,
+                 ApplicationLauncher.alive_UB,
+                 ApplicationLauncher.resurrect);
             }
         }
     }
